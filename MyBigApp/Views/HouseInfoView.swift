@@ -38,8 +38,6 @@ struct HouseInfoView: View {
             }
             .navigationTitle("LCS Houses")
         }
-        
-       
         .padding()
     }
 }
