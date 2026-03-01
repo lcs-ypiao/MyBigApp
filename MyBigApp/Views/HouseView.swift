@@ -26,6 +26,10 @@ struct HouseView: View {
             }
             Text (houseName).font(.largeTitle)
             Text (houseInformation)
+            Button {
+            }label: {
+                Text(Image(systemName: "chevron.forward"))
+            }
             Rectangle()
                 .colorInvert()
             Rectangle()
