@@ -22,13 +22,13 @@ struct HouseInfoView: View {
                 
                 
             }
-            .padding()
+            .listStyle(.plain)
             .navigationTitle("LCS Houses")
         }
         
     }
     
-    }
+}
 
 #Preview {
     HouseInfoView()

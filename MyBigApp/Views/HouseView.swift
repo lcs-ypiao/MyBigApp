@@ -11,33 +11,19 @@ struct HouseView: View {
     let houseName : String
     let houseInformation : String
     var body: some View {
-        VStack(alignment: .leading){
-            HStack {
-                Group {
-                    Rectangle()
-                    Rectangle()
-                        .colorInvert()
-                    Rectangle()
-                        .colorInvert()
-                    Rectangle()
-                        .colorInvert()
-                }
-                .aspectRatio(1.0/1.0,contentMode: .fit)
+        HStack {
+            VStack(alignment: .leading){
+                Rectangle()
+                    .frame(width:100,height: 100)
+                Text (houseName).font(.largeTitle)
+                Text (houseInformation)
+         
             }
-            Text (houseName).font(.largeTitle)
-            Text (houseInformation)
+            
             Button {
             }label: {
                 Text(Image(systemName: "chevron.forward"))
             }
-            Rectangle()
-                .colorInvert()
-            Rectangle()
-                .colorInvert()
-            Rectangle()
-                .colorInvert()
-            Rectangle()
-                .colorInvert()
         }
     }
 }
