@@ -11,13 +11,13 @@ struct DiaryView: View {
     var body: some View {
         NavigationStack {
             HStack {
-                Rectangle()
-                    .frame(width : 50,height :50)
-                VStack {
-                    Text("Daily Life").font(.headline)
-                    Text("In China")
-                        .fontWeight(.ultraLight)
-                }
+                OptionsView(
+                    header: "Daily Life",
+                    subtitle: "In China"
+                )
+                OptionsView(
+                    header: "School Life",
+                    subtitle: "Books")
             }
             
             .padding()
